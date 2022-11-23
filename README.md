@@ -24,7 +24,7 @@
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#Development Strategy">Roadmap</a></li>
     <ul>
       <li><a href="#suggested">Suggested</a></li> 
     </ul>
@@ -39,7 +39,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](images/screenshot.png)
+[![Product Name Screen Shot][product-screenshot]](Images/screenshot.png)
 
 Project's Functionality:
 
@@ -47,7 +47,6 @@ Project's Functionality:
 * Highlighting Active section in the viewport.
 * Scrolling using Navbar.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -68,7 +67,7 @@ Start by Cloning the project on your machine.
 <!-- ROADMAP -->
 
 
-## Roadmap
+## Development Strategy
 
 - [x] Creating app.js & styles.css
 - [x] Linking app.js & styles.css
@@ -109,7 +108,7 @@ Project Link: [https://github.com/GeorgeVictor8/Landing-Page-FWD-initiative](htt
 Resources I found helpful and would like to give credit to.
 
 * [Open Source Readme File](https://github.com/othneildrew/Best-README-Template#readme-top)
-* [MDN IntersectionObserver](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/observe)
+* [MDN IntersectionObserver Method](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/observe)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -117,4 +116,4 @@ Resources I found helpful and would like to give credit to.
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: Images/screenshot.png
