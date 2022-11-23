@@ -4,9 +4,9 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<div class =".text-alight-center">
-  <h3 class =".text-alight-center">FWD Landing Page</h3>
-  <p class =".text-alight-center">
+<div align="center">
+  <h3 align="center">FWD Landing Page</h3>
+  <p align="center">
     Landing Page with Scrolling Navigation.
 </div>
 
@@ -25,11 +25,15 @@
     <li>
       <a href="#getting-started">Getting Started</a>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#suggested">Suggested</a></li> 
+    <ul>
+      <li><a href="#suggested">Suggested</a></li> 
+    </ul>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
+
+
 
 
 <!-- ABOUT THE PROJECT -->
@@ -43,22 +47,27 @@ Project's Functionality:
 * Highlighting Active section in the viewport.
 * Scrolling using Navbar.
 
-<p class ="text-alight-right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 ### Built With
 
-* [![JQuery][JQuery.com]][JQuery-url]
+* JQuery
 
-<p class ="text-alight-right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- GETTING STARTED -->
+
+
 ## Getting Started
 
 Start by Cloning the project on your machine.
 
 <!-- ROADMAP -->
+
+
 ## Roadmap
 
 - [x] Creating app.js & styles.css
@@ -71,13 +80,16 @@ Start by Cloning the project on your machine.
 - [x] Added an active state to Anchors and Sections
 - [x] Responsiveness
 
-## Suggested 
+
+### Suggested 
 - [ ] Add a scroll to the top button on the page that’s only visible when the user scrolls below the fold of the page.
 - [ ] Update/change the design/content.
 - [ ] Make sections collapsible.
 
 
-<p class ="text-alight-right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 <!-- CONTACT -->
 ## Contact
@@ -86,11 +98,13 @@ George Victor - georgevic47@gmail.com
 
 Project Link: [https://github.com/GeorgeVictor8/Landing-Page-FWD-initiative](https://github.com/GeorgeVictor8/Landing-Page-FWD-initiative)
 
-<p class ="text-alight-right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
+
+
 
 Resources I found helpful and would like to give credit to.
 
@@ -98,11 +112,9 @@ Resources I found helpful and would like to give credit to.
 * [MDN IntersectionObserver](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/observe)
 
 
-<p class ="text-alight-right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[product-screenshot]: images/FireShot Capture 001 - Manipulating the DOM -.png
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+[product-screenshot]: images/screenshot.png

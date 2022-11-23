@@ -238,11 +238,3 @@ section.your-active-class .landing__container::after {
         margin-bottom: 0.5em ;
     }
  }
-
- .text-alight-right{
-    text-align: right;
- }
-
- .text-alight-center{
-    text-align: center;
- }
