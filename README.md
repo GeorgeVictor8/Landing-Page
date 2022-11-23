@@ -96,12 +96,7 @@ Resources I found helpful and would like to give credit to.
 
 * [Open Source Readme File](https://github.com/othneildrew/Best-README-Template#readme-top)
 * [MDN IntersectionObserver](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/observe)
-* [MDN ScrollIntoView Method](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+
 
 <p class ="text-alight-right">(<a href="#readme-top">back to top</a>)</p>
 
