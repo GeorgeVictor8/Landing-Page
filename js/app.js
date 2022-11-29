@@ -25,7 +25,7 @@ $(document).ready(function () {
  * Define Global Variables
  * 
 */
-const Sections = document.querySelectorAll ("section");
+const allSections = document.querySelectorAll ("section");
 const Nav = document.querySelector("#navbar__list");
 const fragment = document.createDocumentFragment();
 
@@ -46,31 +46,42 @@ const fragment = document.createDocumentFragment();
 // build the nav
 // creating & appending li & a elements into nav
 
-function createNavBar (){
-    for (const item of Sections){
+function buildingNav (){
+    for (const item of allSections){
+
        const title = item.getAttribute("data-nav");
-       const Id = item.getAttribute("id");
+       const id = item.getAttribute("id");
+
+       // Creating list items and anchors
        const List = document.createElement('li');
        const Link = document.createElement('a');
-       Link.href = `#${Id}`;
+       Link.href = `#${id}`;
        Link.textContent = title;
+
+       // Adding "menu__Link" class on Anchor Tags
        Link.classList.add("menu__Link");
-       // Adding .click on Anchor Tags
+       
 
        // scrolling into view by using click listener
-       Link.addEventListener("click" , e => {
-       e.preventDefault();
-       item.scrollIntoView({behavior: "smooth"}); 
-       })
+       $(Link).click(event => {
+        event.preventDefault();
+        item.scrollIntoView({behavior: "smooth"}); 
+        }) 
+
+        // Appending anchors to List items
 
        List.appendChild(Link);
+
+       // Appending List items to fragment
        fragment.appendChild(List);
 
     }
+
+    // Appending Fragment to the nav bar
     Nav.appendChild(fragment);
 }
 
-createNavBar();
+buildingNav();
 
 // Add class 'active' to section when near top of viewport
 
@@ -82,51 +93,41 @@ let observerOptions = {
   }
   
 // adding active class while scrolling using intersection observer.
-const io = new IntersectionObserver((entries) => {
-    const Links = Nav.querySelectorAll('a');
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
+
+const io = new IntersectionObserver((scrolledSections) => {
+    const links = Nav.querySelectorAll('a');
+
+    for (const scrolledSection of scrolledSections){
+      if (scrolledSection.isIntersecting) {
 
         // Adding 'active' class to anchors.
-        Links.forEach(link =>
-            {
-                if (link.textContent === entry.target.dataset.nav){
-                    link.classList.add('active');
-                }
-        // Removing 'active' class otherwise.
-                else{
-                    link.classList.remove('active');
-                }
-            })
+
+        for (const link of links){
+          if (link.textContent === scrolledSection.target.dataset.nav){
+            link.classList.add('active');
+        }
+// Removing 'active' class otherwise.
+        else{
+            link.classList.remove('active');
+        }
+        }
         // Adding 'your-active-class' class to sections.
-        entry.target.classList.add('your-active-class');
+        scrolledSection.target.classList.add('your-active-class');
       } else {
         // Remove 'your-active-class' class otherwise.
-        entry.target.classList.remove('your-active-class');
+        scrolledSection.target.classList.remove('your-active-class');
       }
-    })
+    }
   },observerOptions)
   
   // Observing all the Sections in our viewport.
 
   // observing sections into view.
-Sections.forEach((el) => {
-    io.observe(el);
-}) 
 
-// Scroll to anchor ID using scrollTO event
+  for (const section of allSections){
+    io.observe(section);
+}
 
-/**
- * End Main Functions
- * Begin Events
- * 
-*/
-
-// Build menu 
-
-// Scroll to section on link click
-
-// Set sections as active
 
 
 // testing performance
