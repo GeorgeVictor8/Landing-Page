@@ -1,6 +1,4 @@
-$(document).ready(function () {
-
- const startTime = performance.now();
+const startTime = performance.now();
 /**
  * 
  * Manipulating the DOM exercise.
@@ -25,8 +23,8 @@ $(document).ready(function () {
  * Define Global Variables
  * 
 */
-const allSections = document.querySelectorAll ("section");
-const Nav = document.querySelector("#navbar__list");
+const allSections = document.getElementsByTagName("section");
+const Nav = document.getElementById("navbar__list");
 const fragment = document.createDocumentFragment();
 
 /**
@@ -34,7 +32,6 @@ const fragment = document.createDocumentFragment();
  * Start Helper Functions
  * 
 */
-
 
 
 /**
@@ -63,7 +60,7 @@ function buildingNav (){
        
 
        // scrolling into view by using click listener
-       $(Link).click(event => {
+       Link.addEventListener('click',event => {
         event.preventDefault();
         item.scrollIntoView({behavior: "smooth"}); 
         }) 
@@ -81,7 +78,7 @@ function buildingNav (){
     Nav.appendChild(fragment);
 }
 
-buildingNav();
+window.addEventListener("load", buildingNav());
 
 // Add class 'active' to section when near top of viewport
 
@@ -95,7 +92,7 @@ let observerOptions = {
 // adding active class while scrolling using intersection observer.
 
 const io = new IntersectionObserver((scrolledSections) => {
-    const links = Nav.querySelectorAll('a');
+    const links = Nav.getElementsByTagName('a');
 
     for (const scrolledSection of scrolledSections){
       if (scrolledSection.isIntersecting) {
@@ -135,4 +132,3 @@ const endTime = performance.now();
 console.log("Start Time :" + startTime);
 console.log("End Time :" + endTime);
 console.log("Performance Time :" + (endTime-startTime) + " milliSecond");
-})
