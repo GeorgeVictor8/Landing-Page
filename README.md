@@ -95,7 +95,7 @@ Start by Cloning the project on your machine.
 
 George Victor - georgevic47@gmail.com
 
-Project Link: [https://github.com/GeorgeVictor8/Landing-Page-FWD-initiative](https://github.com/GeorgeVictor8/Landing-Page-FWD-initiative)
+Project Link: [https://github.com/GeorgeVictor8/Landing-Page-FWD-initiative](https://github.com/GeorgeVictor8/Landing-Page
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
